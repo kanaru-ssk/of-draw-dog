@@ -1,7 +1,7 @@
 #include "dog.h"
 
 void Dog::draw() const {
-  ofSetColor(100);
+  ofSetColor(color_);
   // face
   ofDrawCircle(x_, y_, size_ / 2);
 

@@ -4,7 +4,7 @@
 void ofApp::setup() {
   ofSetBackgroundColor(255);
   ofSetCircleResolution(64);
-  dog = Dog(200, 200, 200);
+  dog = Dog(200, 200, 200, 100);
 }
 
 //--------------------------------------------------------------
