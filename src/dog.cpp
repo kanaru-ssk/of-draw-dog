@@ -1,29 +1,6 @@
 #include "dog.h"
 
-Dog::Dog() {
-  ofSetCircleResolution(64);
-  x_ = 0;
-  y_ = 0;
-  size_ = 100;
-}
-
-Dog::Dog(int x, int y, int size) {
-  ofSetCircleResolution(64);
-  x_ = x;
-  y_ = y;
-  size_ = size;
-}
-
-int Dog::getX() { return x_; }
-void Dog::setX(int x) { x_ = x; }
-
-int Dog::getY() { return y_; }
-void Dog::setY(int y) { y_ = y; }
-
-int Dog::getSize() { return size_; }
-void Dog::setSize(int size) { size_ = size; }
-
-void Dog::draw() {
+void Dog::draw() const {
   ofSetColor(100);
   // face
   ofDrawCircle(x_, y_, size_ / 2);

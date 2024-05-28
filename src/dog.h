@@ -4,15 +4,17 @@
 
 class Dog {
  public:
-  Dog();
-  Dog(int x, int y, int size);
-  int getX();
-  void setX(int x);
-  int getY();
-  void setY(int y);
-  int getSize();
-  void setSize(int size);
-  void draw();
+  Dog() : x_(0), y_(0), size_(100) {}
+  Dog(int x, int y, int size) : x_(x), y_(y), size_(size) {}
+
+  int getX() const { return x_; }
+  void setX(int x) { x_ = x; }
+  int getY() const { return y_; }
+  void setY(int y) { y_ = y; }
+  int getSize() const { return size_; }
+  void setSize(int size) { size_ = size; }
+
+  void draw() const;
 
  private:
   int x_, y_, size_;
