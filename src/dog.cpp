@@ -1,5 +1,12 @@
 #include "dog.h"
 
+Dog::Dog() {
+  ofSetCircleResolution(64);
+  x_ = 0;
+  y_ = 0;
+  size_ = 100;
+}
+
 Dog::Dog(int x, int y, int size) {
   ofSetCircleResolution(64);
   x_ = x;

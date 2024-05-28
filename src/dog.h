@@ -4,6 +4,7 @@
 
 class Dog {
  public:
+  Dog();
   Dog(int x, int y, int size);
   int getX();
   void setX(int x);
