@@ -16,7 +16,21 @@ void ofApp::draw() { dog.draw(); }
 void ofApp::exit() {}
 
 //--------------------------------------------------------------
-void ofApp::keyPressed(int key) {}
+void ofApp::keyPressed(int key) {
+  if (key == OF_KEY_LEFT) {
+    dog.setX(dog.getX() - 10);
+  } else if (key == OF_KEY_RIGHT) {
+    dog.setX(dog.getX() + 10);
+  } else if (key == OF_KEY_UP) {
+    dog.setY(dog.getY() - 10);
+  } else if (key == OF_KEY_DOWN) {
+    dog.setY(dog.getY() + 10);
+  } else if (key == '+') {
+    dog.setSize(dog.getSize() + 10);
+  } else if (key == '-') {
+    dog.setSize(dog.getSize() - 10);
+  }
+}
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key) {}
